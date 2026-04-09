@@ -43,7 +43,7 @@ INSERT INTO courses VALUES
 	('F107', 'Foundations of Computer 
 	Science '),
 	('F106', 'Academic and Professional 
-	Developmentt'),
+	Development'),
 	('F102', 'Foreign Language'); #i had the first 4 courses in foundation but i added foreign language by myself
     
 INSERT INTO enrollment VALUES
