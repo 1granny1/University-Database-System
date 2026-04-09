@@ -18,7 +18,7 @@ Create table enrollment(
     Course_code varchar(10) not null,
     semester varchar(50) not null,
     enrollment_date date not null,
-    status enum("active", "completed", "on hold", "dropped") not null,
+    status enum("active", "on hold", "dropped") not null,
     foreign key (Student_code) references students(Student_code),
     foreign key (Course_code) references Courses(Course_code) 
     );
@@ -47,7 +47,7 @@ INSERT INTO courses VALUES
 	('F102', 'Foreign Language'); #i had the first 4 courses in foundation but i added foreign language by myself
     
 INSERT INTO enrollment VALUES
-	('ER001', 'GH1046612', 'F100', 'Winter 2026', '2026-01-10', 'completed'),
+	('ER001', 'GH1046612', 'F100', 'Winter 2026', '2026-01-10', 'active'),
 	('ER002', 'GH1046613', 'F101', 'Winter 2026', '2026-01-10', 'dropped'),
 	('ER003', 'GH1046615', 'F102', 'Winter 2026', '2026-01-11', 'active'),
 	('ER004', 'GH1046614', 'F106', 'Winter 2026', '2026-01-12', 'active'),
