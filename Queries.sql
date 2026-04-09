@@ -17,7 +17,7 @@ FROM students s
 JOIN enrollment e ON s.Student_code = e.Student_code
 JOIN courses c ON e.Course_code = c.Course_code;
 
-#This is a query that counts the number of students that are enrolled in each code
+#This is a query that counts the number of students that are enrolled in each course
 SELECT c.course_name, COUNT(e.Student_code) AS Total_Students
 FROM courses c
 JOIN enrollment e ON c.Course_code = e.Course_code
